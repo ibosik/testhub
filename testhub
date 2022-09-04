@@ -1,0 +1,114 @@
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("Ibosik / Morgen hub", "GrapeTheme")
+
+local Tab = Window:NewTab("Player")
+
+local Section = Tab:NewSection("Player")
+
+Section:NewButton("Click-TP", "idk", function()
+    mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Click TP"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+
+Section:NewSlider("Walk Speed", "Walk Speed.", 500, 0, function(s) 
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+Section:NewButton("Fling", "haha funny head spin go fling and bye bye", function()
+loadstring(game:HttpGet('https://raw.githubuesrcontent.com/NotFalxe/Roblox-Scripts/source-code/headfling.lua'))()
+game.WorkSpace.Effects:Destroy()
+end)
+
+Section:NewButton("Delete Sit Permissions", "idk", function()
+game.Players.LocalPlayer.PlayerScripts.SitPermissions:Remove()
+end)
+
+Section:NewButton("Delete Water (RESET)", "delete water", function()
+game.Workspace.Water.Water:Destroy()
+game.Workspace.Water.Water:Destroy()
+game.Workspace.Water.Water:Destroy()
+game.Workspace.Water.Water:Destroy()
+game.Workspace.Water.Water:Destroy()
+game.Workspace.Water.Water:Destroy()
+game.Workspace.Water.Water:Destroy()
+game.Workspace.Water.Water:Destroy()
+game.Workspace.Water.Water:Destroy()
+game.Workspace.Water.Water:Destroy()
+game.Workspace.Water.Water:Destroy()
+game.Workspace.Water.Water:Destroy()
+game.Workspace.Water.Water:Destroy()
+game.Workspace.Water.Water:Destroy()
+wait(1)
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end)
+
+
+local Tab = Window:NewTab("Guis")
+
+local Section = Tab:NewSection("Guis")
+
+Section:NewButton("Ibosik / Morgen hub - Da Hood", "hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Kurus00/ABOBA/main/Kurus%20hub%20-%20da%20hood.lua"))()
+end)
+
+Section:NewButton("Ibosik / Morgen Hub - KAT", "hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Kurus00/ABOBA/main/Kurus%20hub%20-%20PLS%20DONATE.lua"))()
+end)
+
+Section:NewButton("Noob Army", "best lt2 script", function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/NOOBARMYSCRIPTER/NOOBARMYSCRIPTER/main/AXE%20LOOP%20SCRIPT"), true))()
+end)
+
+
+local Tab = Window:NewTab("Fun")
+
+local Section = Tab:NewSection("Fun")
+
+Section:NewButton("Universal Hub", "idk", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
+end)
+
+Section:NewButton("Nullware V3", "idk", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Kurus00/ABOBA/main/nullware.lua'))()
+end)
+
+Section:NewButton("Chat Art (key - .)", ".nigger", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Kurus00/ABOBA/main/chat%20art.lua"))()
+end)
+
+Section:NewButton("Bang (R6)", "FUCK", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Kurus00/ABOBA/main/ne%20znayu.lua"))()
+end)
+
+Section:NewButton("Invisible", "If r6 u cant move.", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Kurus00/ABOBA/main/FE%20Invisible%20r15.lua"))()
+end)
+
+Section:NewButton("Free Emotes V2", "pidoras", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/o5u3/emotesv2/main/script"))()
+end)
+
+
+local Tab = Window:NewTab("Other Games")
+
+local Section = Tab:NewSection("Other Games")
+
+Section:NewButton("Aimbot", "haha funny aim skill", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ibosik/ok/main/ok"))()
+
+end)
+
+
+local Tab = Window:NewTab("Updates")
+
+local Section = Tab:NewSection("Added fling")

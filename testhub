@@ -25,7 +25,7 @@ Section:NewSlider("Walk Speed", "Walk Speed.", 500, 0, function(s)
 end)
 
 Section:NewButton("Fling", "haha funny head spin go fling and bye bye", function()
-loadstring(game:HttpGet('https://raw.githubuesrcontent.com/NotFalxe/Roblox-Scripts/source-code/headfling.lua'))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/NotFalxe/Roblox-Scripts/source-code/headfling.lua'),true))()
 game.WorkSpace.Effects:Destroy()
 end)
 
@@ -57,7 +57,7 @@ local Tab = Window:NewTab("Guis")
 
 local Section = Tab:NewSection("Guis")
 
-Section:NewButton("Ibosik / Morgen hub - Da Hood", "hub", function()
+Section:NewButton("Ibosik / Morgen hub - IDK", "hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Kurus00/ABOBA/main/Kurus%20hub%20-%20da%20hood.lua"))()
 end)
 
